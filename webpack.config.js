@@ -24,7 +24,7 @@ module.exports = {
         use: [
           {
             // 利用するローダー
-            loader: 'babel-loader',
+            loader: 'babel-loader?{ "presets":[["@babel/emv",{"modules": false}]] }',
             // ローダーのオプション
             options: {
               presets: [['@babel/preset-env', { modules: false }]]
